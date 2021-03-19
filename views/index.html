@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.80.0">
-    <title>Ekhephini FM</title>
+    <title>Ekhephini FM - Izwi Lenqubela</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/">
 
@@ -31,7 +31,7 @@
     </style>
 
     <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
+    <!-- <link href="starter-template.css" rel="stylesheet"> -->
   </head>
   <body>
 
@@ -41,6 +41,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
+<!-- 
       <ul class="navbar-nav mb-2 mb-md-0">
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <li class="nav-item">
@@ -51,7 +52,6 @@
         </li>
       </ul>
         
-<!-- 
         <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
@@ -66,7 +66,7 @@
 
       <!-- Carousel -->
 
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" align="center">
 
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -76,6 +76,8 @@
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
     </div>
 
     <div class="carousel-inner">
@@ -200,20 +202,17 @@
     </button>
   </div>
 
-    <div style="width: 100%; text-align: center; margin-bottom: 200px;" align="center">
-    	<a class="btn btn-danger btn-block" href="https://ekhephinifm.co.za">End Livestream</a>
-      <audio controls autoplay>
-        <source src="http://209.97.189.28:8000/listen.html?sid=1" type="audio/mp3">
-      Your browser does not support the audio element.
-      </audio>
-    </div>
+    <!--<div style="width: 100%; text-align: center; margin-bottom: 200px;" align="center">-->
+    <!--  <audio controls autoplay src="http://209.97.189.28:8000/listen.html?sid=1" type="audio/mp3"></audio>-->
+    <!--  Your browser does not support the audio element.-->
+    <!--</div>-->
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
-
+    <div class="container marketing offline" align="center">
+        <button onclick="tuneIn()" class="btn btn-success btn-block">Listen Now Live</button>
     </div><!-- /.container -->
 
     <!-- FOOTER -->
@@ -225,6 +224,7 @@
     </main><!-- /.container -->
 
     <script src="../public/assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../public/assets/dist/js/sandbox.js"></script>
   
   </body>
 </html>
